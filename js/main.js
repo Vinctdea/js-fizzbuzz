@@ -5,17 +5,19 @@ const container = document.querySelector(".container");
 // fare un ciclo che genera numeri da 1 a 100
 for (let i = 1; i <= 100; i++){
 console.log(i);
-const elem = `<div class="box"> ${i} </div>`;
-console.log(elem);
+let elem = `<div class="box "> ${i} </div>`;
+
+if( i % 15 ==0){
+    elem = `<div class="box diviso 15"> ${i} </div>`;
+}else if ( i % 5 == 0){
+     elem = `<div class="box diviso 5"> ${i} </div>`;
+}else if ( i % 3 == 0){
+     elem = `<div class="box diviso 3"> ${i} </div>`;
+}
+
 container.innerHTML += elem;
 
-if( i % 3 === 0 ){
-    elem.classList.add ("diviso3");
-}else if ( i % 5 === 0){
-    elem.classList.add ("diviso5");
-}else if ( i % 15 === 0){
-    elem.classList.add ("diviso15");
 }
-}
+
 
 
