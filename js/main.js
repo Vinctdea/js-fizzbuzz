@@ -8,11 +8,11 @@ console.log(i);
 let elem = `<div class="box "> ${i} </div>`;
 
 if( i % 15 ==0){
-    elem = `<div class="box diviso 15"> ${i} </div>`;
+    elem = `<div class="box diviso15"> ${i} </div>`;
 }else if ( i % 5 == 0){
-     elem = `<div class="box diviso 5"> ${i} </div>`;
+     elem = `<div class="box diviso5"> ${i} </div>`;
 }else if ( i % 3 == 0){
-     elem = `<div class="box diviso 3"> ${i} </div>`;
+     elem = `<div class="box diviso3"> ${i} </div>`;
 }
 
 container.innerHTML += elem;

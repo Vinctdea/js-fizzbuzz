@@ -1,9 +1,19 @@
 /***********regole main**********/
+main{
+    background-color: darkslategrey;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
 .box{
     display: flex;
     width: calc(100% / 7 - 20px);
     height: 200px;
-    background-color: rgb(122, 122, 236);
+    background-color: rgb(94, 85, 218);
     align-items: center;
     justify-content: center;
     font-size: 50px;
@@ -11,9 +21,24 @@
 }
 
 .container{
+    margin: 0 auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+}
+
+.diviso3{
+    background-color: chartreuse;
+}
+
+.diviso15{
+    background-color: red;
+}
+
+.diviso5{
+    background-color: yellow;
 }
